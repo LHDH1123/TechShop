@@ -1,0 +1,443 @@
+.table-list {
+  padding: 20px;
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #dbe0e6;
+  box-shadow: none;
+}
+
+.brand-list {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: solid 1px #dee2e6;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.table thead tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table thead th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  position: relative;
+}
+
+.table thead th input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.table tbody td {
+  padding: 12px 16px;
+  vertical-align: middle;
+}
+
+.checkboxs input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkboxs .checkmarks {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex img {
+  width: 100px;
+  height: 45px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.badge:hover {
+  cursor: pointer;
+}
+
+.badge-linesuccess {
+  background-color: #e6f9f0;
+  color: #28a745;
+}
+
+.badge-linered {
+  background-color: #e6f9f0;
+  color: red;
+}
+
+.action-table-data {
+  text-align: center;
+}
+
+.edit-delete-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-delete-action a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.edit-delete-action a:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-delete-action a i {
+  font-size: 16px;
+  color: #007bff;
+}
+
+.edit-delete-action a i.feather-trash-2 {
+  color: #dc3545;
+}
+
+.icon {
+  border: solid 1px #dee2e6;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon svg {
+  display: flex;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.cb-all input:hover {
+  cursor: pointer;
+}
+
+.btn_exit {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  position: absolute;
+  top: 14px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.btn_exit button {
+  border: none;
+  background-color: #fff;
+  font-weight: 600;
+  color: #959595;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5b6670;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%; /* Make the input field take full width of its parent */
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: solid 1px #cfcfcf;
+  outline: none;
+  color: #585757;
+  margin-bottom: 16px;
+}
+
+.status {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.switch {
+  margin-left: auto;
+}
+
+.modalContent {
+  padding: 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-cancel {
+  background: #67748e;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: #ff9f43;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.btn-change {
+  background: #ff9f43;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 15px;
+  cursor: pointer;
+  height: 36px;
+}
+
+.input-blocks {
+  margin-bottom: 16px;
+  width: 117px;
+  height: 103px;
+  border: 1px dashed #5b6670;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-blocks:hover {
+  cursor: pointer;
+}
+
+.title-img {
+  font-size: 14px;
+}
+
+.preview-img {
+  width: 117px;
+  height: 78px;
+}
+
+.pagnigation {
+  display: flex;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+@media (max-width: 1024px) {
+  .table-list {
+    padding: 16px;
+  }
+
+  .d-flex img {
+    width: 80px;
+    height: 40px;
+  }
+
+  .edit-delete-action a {
+    width: 28px;
+    height: 28px;
+  }
+
+  .btn_exit {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    top: 10px;
+    right: 6px;
+  }
+
+  .title {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .btn-cancel,
+  .btn-submit,
+  .btn-change {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .preview-img {
+    width: 100px;
+    height: 70px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .table-list {
+    padding: 10px;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 5px 0 5px;
+  }
+
+  .tag-filter,
+  .tag-filterCategory {
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .btn-search {
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .select-tag,
+  .select-tagCategory {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .name {
+    max-width: 120px;
+    font-size: 13px;
+  }
+
+  .table {
+    thead th,
+    tbody td {
+      padding: 10px;
+      font-size: 13px;
+    }
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .edit-delete-action {
+    gap: 6px;
+  }
+
+  .btn-cancel,
+  .btn-submit {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .table-list {
+    overflow-x: auto;
+  }
+
+  .table {
+    min-width: 800px;
+  }
+
+  .card {
+    padding: 10px 5px 0 5px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tag-filter,
+  .tag-filterCategory,
+  .btn-search,
+  .select-tag,
+  .select-tagCategory,
+  .btn-cancel,
+  .btn-submit {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .edit-delete-action {
+    flex-direction: column;
+
+    a {
+      width: 30px;
+      height: 30px;
+
+      i {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .name {
+    max-width: 100px;
+    font-size: 13px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  .title-tag,
+  .title-tagCategory {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .d-flex img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .name {
+    -webkit-line-clamp: 1;
+  }
+}

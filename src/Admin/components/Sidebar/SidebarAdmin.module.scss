@@ -1,0 +1,140 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background-color: #fff;
+  border-right: 1px solid #eaeaea;
+  padding: 16px 0;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-img {
+  padding: 10px 20px;
+  border-bottom: solid 1px #eaeaea;
+}
+
+.sidebar-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav > .submenu {
+  margin-top: 8px;
+}
+
+.nav > .submenu > a {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+  padding: 8px 16px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #fdfdfd;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.nav > .submenu > a:hover,
+.nav > .submenu > a:focus,
+.nav > .submenu.active > a {
+  background-color: #f9f9f9;
+  border-left-color: #ffaf8e;
+  color: #ffaf8e;
+}
+
+.nav > .submenu > ul {
+  margin-top: 4px;
+  margin-left: 16px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav > .submenu > ul > .submenu > a {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding: 6px 30px;
+  margin-right: 16px;
+  color: #000;
+  text-decoration: none;
+  border-left: 4px solid transparent;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.nav > .submenu > ul > .submenu > a:hover,
+.nav > .submenu > ul > .submenu > a:focus {
+  background-color: #f6f6f6;
+  border-left-color: #ffaf8e;
+  color: #ffaf8e;
+}
+
+.nav > .submenu > a span,
+.nav > .submenu > ul > .submenu > a span {
+  margin-left: 8px;
+}
+
+.nav > .submenu > a.active {
+  background-color: #ffeed8;
+  border-left-color: #ffaf8e;
+  color: #ffaf8e;
+}
+
+.nav > .submenu > ul > .submenu > a.active {
+  background-color: #ffeed8;
+  border-left-color: #ffaf8e;
+  color: #ffaf8e;
+}
+
+.separate {
+  margin: 0px 20px;
+  margin-top: 10px;
+  border-bottom: solid 1px #eaeaea;
+}
+
+.title-submenu {
+  font-size: 14px;
+  padding: 6px 26px;
+  font-weight: 700;
+}
+
+/* --- RESPONSIVE --- */
+
+.toggle-button {
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  background-color: #ffaf8e;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 6px;
+  z-index: 1100;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    transform: translateX(-100%);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .toggle-button {
+    display: block;
+  }
+}

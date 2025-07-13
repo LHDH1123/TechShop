@@ -1,0 +1,66 @@
+.filter {
+  display: flex;
+  margin-top: 15px;
+}
+.filter-header {
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "SVNMont", sans-serif;
+  align-items: center;
+}
+
+.filter-results {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.filter-results span {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "SVNMont", sans-serif;
+}
+
+.filter-select {
+  width: auto;
+  padding: 4px 0px;
+  margin-left: 10px;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-select option {
+  cursor: pointer;
+}
+
+.filter-tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 400px;
+  margin-left: 222px;
+}
+
+.tag {
+  display: flex;
+  border: 1px solid black;
+  font-size: 12px;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 18px;
+  padding: 3px 11px;
+  font-family: "SVNMont", sans-serif;
+  align-items: center;
+}
+
+.btn-del {
+  display: flex;
+  font-size: 14px;
+  font-family: "SVNMont", sans-serif;
+  align-items: center;
+  text-decoration: underline;
+  cursor: pointer;
+}

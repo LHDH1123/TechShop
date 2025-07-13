@@ -1,0 +1,535 @@
+.table-list {
+  padding: 20px;
+  background-color: #ffffff;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  border-radius: 4px;
+  border: 1px solid #dbe0e6;
+  box-shadow: none;
+}
+
+.brand-list {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: solid 1px #dee2e6;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  color: #333;
+}
+
+.table thead tr {
+  border-bottom: 1px solid #dee2e6;
+}
+
+.table thead th {
+  padding: 12px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  position: relative;
+}
+
+.table thead th input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.2s ease;
+}
+
+.table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.table tbody td {
+  padding: 12px 12px;
+  vertical-align: middle;
+}
+
+.checkboxs input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.checkboxs .checkmarks {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.d-flex img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.badge:hover {
+  cursor: pointer;
+}
+
+.badge-linesuccess {
+  background-color: #e6f9f0;
+  color: #28a745;
+}
+
+.badge-linered {
+  background-color: #e6f9f0;
+  color: red;
+}
+
+.action-table-data {
+  text-align: center;
+}
+
+.edit-delete-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.edit-delete-action a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.edit-delete-action a:hover {
+  background-color: #f1f1f1;
+}
+
+.edit-delete-action a i {
+  font-size: 16px;
+  color: #007bff;
+}
+
+.edit-delete-action a i.feather-trash-2 {
+  color: #dc3545;
+}
+
+.icon {
+  border: solid 1px #dee2e6;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.icon svg {
+  display: flex;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.name-product {
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  margin-left: 10px;
+  max-width: 200px; // Điều chỉnh chiều rộng tùy ý
+  display: -webkit-box;
+  -webkit-line-clamp: 2; // Hiển thị tối đa 2 dòng
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word; // Nếu có từ quá dài, tự động xuống dòng
+}
+
+.card {
+  display: flex;
+  padding: 20px 10px 0px 10px;
+  gap: 15px;
+}
+
+.tag-filter {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-color: #dbe0e6;
+  color: #5b6670;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid rgba(145, 158, 171, 0.3);
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+.pagnigation {
+  display: flex;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.tag-filter:hover {
+  cursor: pointer;
+}
+
+.tag-filterCategory {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  border-color: #dbe0e6;
+  color: #5b6670;
+  height: 40px;
+  line-height: 40px;
+  border: 1px solid rgba(145, 158, 171, 0.3);
+  border-radius: 5px;
+  padding: 0px 10px;
+}
+
+.tag-filterCategory:hover {
+  cursor: pointer;
+}
+
+.title-tag {
+  padding: 0px 5px;
+}
+
+.title-tagCategory {
+  padding: 0px 5px;
+}
+
+.btn-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ff9f43;
+  color: #ffffff;
+  width: 89;
+  height: 38px;
+  border-radius: 8px;
+  padding: 0px 10px;
+}
+
+.btn-search:hover {
+  cursor: pointer;
+}
+
+.select-tag {
+  position: absolute;
+  border: 1px solid rgba(145, 158, 171, 0.3);
+  border-radius: 5px;
+  background: #fff;
+  margin-top: 40px;
+  width: 149px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.select-tagCategory {
+  position: absolute;
+  border: 1px solid rgba(145, 158, 171, 0.3);
+  border-radius: 5px;
+  background: #fff;
+  margin-top: 40px;
+  width: 149px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.tag {
+  padding: 6px 10px;
+}
+
+.tag:hover {
+  background: #ff9f43;
+  color: #ffffff;
+}
+
+.tagCategory {
+  padding: 6px 10px;
+}
+
+.tagCategory:hover {
+  background: #ff9f43;
+  color: #ffffff;
+}
+
+td {
+  color: #646b72;
+  font-size: 14px;
+}
+
+.btn-cancel {
+  background: #67748e;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: #ff9f43;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.select-tag {
+  position: absolute;
+  border: 1px solid rgba(145, 158, 171, 0.3);
+  border-radius: 5px;
+  background: #fff;
+  margin-top: 40px;
+  width: 149px;
+  z-index: 10;
+  cursor: pointer;
+  max-height: 300px; /* Set max height to prevent overflow */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.select-tagCategory {
+  position: absolute;
+  border: 1px solid rgba(145, 158, 171, 0.3);
+  border-radius: 5px;
+  background: #fff;
+  margin-top: 40px;
+  margin-left: 165px;
+  width: 149px;
+  z-index: 10;
+  cursor: pointer;
+  max-height: 300px; /* Set max height to prevent overflow */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+@media screen and (max-width: 1024px) {
+  .table-list {
+    padding: 15px;
+  }
+
+  .d-flex img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .name {
+    max-width: 150px;
+  }
+
+  .edit-delete-action a {
+    width: 28px;
+    height: 28px;
+  }
+
+  .edit-delete-action a i {
+    font-size: 14px;
+  }
+
+  .btn-search {
+    width: auto;
+    padding: 0 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .table-list {
+    padding: 10px;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 5px 0 5px;
+  }
+
+  .tag-filter,
+  .tag-filterCategory {
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .btn-search {
+    height: 36px;
+    font-size: 13px;
+  }
+
+  .select-tag {
+    width: 95%;
+    margin-top: 38px;
+  }
+
+  .select-tagCategory {
+    width: 95%;
+    margin-top: 86px;
+    margin-left: 0px;
+  }
+
+  .name {
+    max-width: 120px;
+    font-size: 13px;
+  }
+
+  .table thead th,
+  .table tbody td {
+    padding: 10px;
+    font-size: 13px;
+  }
+
+  .badge {
+    font-size: 11px;
+    padding: 3px 6px;
+  }
+
+  .edit-delete-action {
+    gap: 6px;
+  }
+
+  .btn-cancel,
+  .btn-submit {
+    padding: 8px 16px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .table {
+    font-size: 12px;
+  }
+
+  .table thead th,
+  .table tbody td {
+    padding: 8px;
+  }
+
+  .name {
+    max-width: 100px;
+    -webkit-line-clamp: 1;
+  }
+
+  .d-flex img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .btn-search,
+  .btn-cancel,
+  .btn-submit {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .tag-filter,
+  .tag-filterCategory {
+    width: 100%;
+  }
+
+  .select-tag,
+  .select-tagCategory {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .card {
+    padding: 0;
+  }
+
+  .action-table-data {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .table-list {
+    padding: 10px;
+    overflow-x: auto;
+  }
+
+  .card {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 5px 0 5px;
+  }
+
+  .table {
+    min-width: 800px; // Cho phép cuộn ngang
+  }
+
+  .tag-filter,
+  .tag-filterCategory {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 0 10px;
+  }
+
+  .btn-search {
+    width: 100%;
+    height: 36px;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  .select-tag,
+  .select-tagCategory {
+    width: 100%;
+    margin-top: 5px;
+    left: 0;
+  }
+
+  .edit-delete-action {
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .edit-delete-action a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .edit-delete-action a i {
+    font-size: 14px;
+  }
+
+  .name {
+    max-width: 100px;
+    font-size: 13px;
+  }
+
+  td {
+    font-size: 12px;
+  }
+
+  .btn-cancel,
+  .btn-submit {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .title-tag,
+  .title-tagCategory {
+    font-size: 13px;
+  }
+}

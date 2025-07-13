@@ -1,0 +1,59 @@
+.category {
+  display: flex;
+  padding: 20px 75px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); // Điều chỉnh chiều rộng cột tối thiểu
+  gap: 40px; // Khoảng cách giữa các cột và hàng
+  text-align: left;
+  width: 60%;
+}
+
+.title-category {
+  font-size: 14px;
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  font-family: "SVNMont", sans-serif;
+  // margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.category-chil {
+  list-style: none; /* Loại bỏ ký hiệu mặc định của danh sách */
+  padding: 0; /* Xóa padding mặc định */
+  margin: 0; /* Xóa margin mặc định */
+  display: inline-block; /* Hiển thị nội tuyến, giữ độ rộng ôm nội dung */
+  width: auto; /* Đảm bảo chiều rộng tự động */
+  cursor: pointer;
+  color: black;
+  font-family: "SVNMont", sans-serif;
+  will-change: transform;
+  font-weight: normal;
+}
+
+.category-chil li {
+  font-size: 14px;
+  line-height: 1.5715;
+  list-style: none;
+  margin: 15px 0px;
+  cursor: pointer;
+  color: black;
+  font-family: "SVNMont", sans-serif;
+  will-change: transform; /* Giúp cải thiện hiệu suất render */
+  font-weight: normal;
+}
+
+.img-category {
+  margin-left: auto;
+  width: 300px;
+  margin-right: 60px;
+}
+
+.img-category img {
+  width: 100%;
+}

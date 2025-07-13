@@ -1,0 +1,67 @@
+.sidebar {
+  width: 280px;
+  height: 2000px;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 16px;
+  font-family: "SVNMont", sans-serif;
+}
+
+.list {
+  list-style: none;
+  margin: 0px;
+  padding: 0px 16px 12px 0px;
+}
+
+.list li {
+  padding: 5px 0px;
+  display: flex;
+}
+
+.list label {
+  font-size: 14px;
+  padding: 0px 8px;
+  font-family: "SVNMont", sans-serif;
+}
+
+.title {
+  font-size: 16px;
+  font-family: "SVNMont", sans-serif;
+  font-weight: 700;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-button {
+  margin-left: auto;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.ant-checkbox input {
+  cursor: pointer;
+}
+
+.ant-checkbox input:checked {
+  accent-color: orange;
+}
+
+.show-more {
+  cursor: pointer;
+  color: #000;
+  padding-left: 5px;
+  margin-top: 5px;
+  user-select: none;
+  font-size: 13px;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+}

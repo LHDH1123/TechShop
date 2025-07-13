@@ -1,0 +1,157 @@
+.cart {
+  display: flex;
+  padding: 0px 15px;
+}
+
+.body {
+  max-height: 425px; /* Chiều cao tối đa cho container */
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.body::-webkit-scrollbar {
+  width: 6px; /* Độ rộng thanh cuộn */
+}
+
+.body::-webkit-scrollbar-track {
+  background: #fafafa;
+  border-radius: 10px;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background: #bfbebe;
+  border-radius: 10px;
+}
+
+.title {
+  padding: 0px 8px;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.img-product img {
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+.product {
+  display: flex;
+  padding: 0px 15px;
+  font-size: 14px;
+  line-height: 1.5715;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.saperator {
+  margin: 0px 15px;
+  margin-top: 15px;
+}
+
+.info-product {
+  display: flex;
+  padding: 0px 8px;
+  width: 100%;
+  flex-direction: column;
+}
+
+.title-product {
+  display: flex;
+}
+
+.title-product a {
+  text-decoration: none;
+  font-size: 12px;
+  font-family: "SVNMont", sans-serif;
+  color: black;
+  cursor: pointer;
+  display: -webkit-box;
+  -webkit-box-orient: vertical; /* Đặt hướng của box là dọc */
+  -webkit-line-clamp: 2; /* Giới hạn tối đa 2 dòng */
+  text-overflow: ellipsis; /* Thêm dấu ba chấm */
+  overflow: hidden;
+  margin-right: 36px;
+}
+
+.code-product {
+  font-size: 12px;
+  font-family: "SVNMont", sans-serif;
+  color: black;
+  margin-top: 5px;
+}
+
+.title-product button {
+  border: none;
+  width: 25px;
+  height: 25px;
+  background-color: rgb(223, 223, 223);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  text-align: center;
+  flex-basis: 33%;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.number-product {
+  display: flex;
+  margin-top: 6px;
+}
+
+.number {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border: 1px solid rgb(223, 223, 223);
+  border-radius: 13px;
+}
+
+.number button {
+  border: none;
+  background-color: transparent;
+  padding-top: 7px;
+  padding-bottom: 3px;
+  cursor: pointer;
+}
+
+.price-product {
+  display: flex;
+  margin-left: auto;
+}
+
+.quantity {
+  font-size: 12px;
+  font-family: "SVNMont", sans-serif;
+  color: black;
+  padding: 0px 3px;
+}
+
+.new-price {
+  font-size: 15px;
+  font-family: "SVNMont", sans-serif;
+  font-weight: 700;
+}
+
+.price {
+  font-size: 12px;
+  text-decoration: line-through;
+  opacity: 0.5;
+  margin-right: 10px;
+  font-weight: 700;
+  font-family: "SVNMont", sans-serif;
+}
+
+/* Áp dụng cho tất cả input trong component Cart */
+.div-cart input {
+  cursor: pointer;
+}

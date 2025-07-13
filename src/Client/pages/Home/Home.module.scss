@@ -1,0 +1,410 @@
+.banner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 100%;
+  margin: 0px -6px;
+}
+
+.banner_major,
+.banner_exta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.banner_major {
+  width: 83.4%;
+  position: relative;
+  padding: 8px 0px;
+  margin: 0px 5px;
+  overflow: hidden; /* Ẩn phần ảnh vượt ra ngoài */
+}
+
+.banner-images {
+  display: flex;
+  width: 100%;
+  scroll-behavior: smooth; /* Mượt mà khi cuộn bằng tay */
+}
+
+.banner-images img {
+  flex-shrink: 0;
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.banner_exta {
+  width: 40%;
+  padding: 8px;
+  display: flex;
+  flex-direction: column; /* Stack images vertically */
+  justify-content: space-between; /* Space images evenly */
+  height: 100%;
+}
+
+.banner_exta img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  max-height: calc(50% - 15px); /* Adjust max height */
+  object-fit: contain;
+}
+
+/* Remove bottom margin on the last image */
+.banner_exta img:last-child {
+  margin-bottom: 0;
+}
+
+.scroll-button-banner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: black;
+  font-size: 24px;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+  box-shadow: 0 0 10px #b6b5b5;
+}
+
+.scroll-button-banner.left-banner {
+  left: 10px;
+}
+
+.scroll-button-banner.right-banner {
+  right: 10px;
+}
+
+.list_trademark {
+  display: flex;
+}
+
+.content_trademark {
+  display: flex;
+  padding: 10px 0px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent items from wrapping to the next line */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+/* Hide scrollbar in WebKit browsers like Chrome, Safari */
+.content_trademark::-webkit-scrollbar {
+  display: none;
+}
+
+.trademark {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.trademark:hover {
+  transform: translateY(-10px);
+}
+
+.trademark img {
+  width: 217px;
+  aspect-ratio: 2.05 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.content_genuine {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.genuine {
+  flex: 1 1 calc(33.333% - 10px); // 3 ảnh 1 dòng trên desktop
+  max-width: calc(33.333% - 10px);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.genuine:hover {
+  transform: translateY(-10px);
+}
+
+.genuine img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+/* Tablet: 2 ảnh mỗi dòng */
+@media screen and (max-width: 768px) {
+  .genuine {
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
+  }
+}
+
+/* Mobile: 1 ảnh mỗi dòng */
+@media screen and (max-width: 480px) {
+  .genuine {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+.scroll-button {
+  position: absolute;
+  transform: translateY(60%);
+  background-color: rgba(
+    57,
+    57,
+    57,
+    0.5
+  ); /* Slightly transparent white background */
+  color: #fff; /* Icon color */
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+  box-shadow: rgb(184, 193, 202) 0px 0px 10px;
+}
+
+.scroll-button.left {
+  left: 80px;
+}
+
+.scroll-button.right {
+  right: 80px;
+}
+
+.flash-sale {
+  border-radius: 21px;
+  padding-top: 33px;
+  padding-bottom: 15px;
+  margin: 20px 0px;
+  background: rgb(247, 102, 173);
+}
+
+.header-sale {
+  text-align: center;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 0px 35px;
+}
+
+.list-sale {
+  padding: 0px 35px;
+}
+
+.logo-sale img {
+  display: block;
+  max-width: 325px;
+}
+
+.time-sale {
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-transform: initial;
+  flex: 0 0 30%;
+}
+
+.title-sale {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 5px;
+  font-family: "SVNMont", sans-serif;
+}
+
+.time {
+  display: flex;
+  padding: 10px 0px;
+  width: 100%;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.btn-sale {
+  text-align: end;
+  align-self: flex-end;
+  flex: 0 0 25%;
+}
+
+.btn-sale button {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 23px;
+  background: rgb(255, 255, 255);
+  color: rgb(228, 0, 58);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+.time > div {
+  color: rgb(228, 0, 58);
+  font-size: 12px;
+  line-height: 17px;
+  padding: 0px 20px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.countdown-number {
+  font-size: 24px;
+  color: rgb(228, 0, 58);
+  margin-right: 5px;
+  margin-bottom: 4px;
+  line-height: 29px;
+}
+
+.time div + div::before {
+  content: "";
+  border-left: 1px solid rgba(228, 0, 58, 0.2);
+  position: absolute;
+  height: 20px;
+  left: 0px;
+  top: 16%;
+}
+
+@media (max-width: 1024px) {
+  /* Adjust Banner */
+  .banner_major {
+    width: 70%; /* Make the main banner take up less space on tablets */
+  }
+
+  .banner_exta {
+    width: 32.7%; /* Adjust the size of extra banner images */
+  }
+
+  .banner-images img {
+    height: 40%; /* Adjust banner image height */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Make Banner Section Stack for Tablets and smaller screens */
+  .banner {
+    flex-direction: column;
+  }
+
+  .banner_major,
+  .banner_exta {
+    width: 100%;
+  }
+
+  .banner-images img {
+    height: 30%;
+  }
+
+  .banner_exta img {
+    display: none;
+    height: auto;
+  }
+
+  /* Adjust Buttons */
+  .scroll-button-banner {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Mobile adjustments */
+  .banner-images img {
+    height: 25%; /* Reduce the height of the banner images */
+  }
+
+  .banner_exta img {
+    height: auto;
+    max-height: 40%; /* Adjust the height of extra banner images */
+  }
+
+  /* Header adjustments */
+  .header-sale {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 10px;
+  }
+
+  .list-sale {
+    padding: 10px;
+  }
+
+  .logo-sale img {
+    max-width: 250px; /* Smaller logo size on mobile */
+  }
+
+  .time-sale {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .time {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .countdown-number {
+    font-size: 20px; /* Smaller countdown numbers for mobile */
+  }
+
+  .btn-sale button {
+    font-size: 14px; /* Adjust button text size */
+    padding: 10px 15px; /* Smaller button padding */
+  }
+}
+
+@media (max-width: 320px) {
+  /* Extra small devices */
+  .banner-images img {
+    height: 20%; /* Make the banner image height even smaller */
+  }
+
+  .genuine img {
+    width: 100%;
+    height: 200px; /* Limit image size on small screens */
+  }
+
+  .content_genuine {
+    flex-direction: column;
+  }
+
+  .genuine {
+    margin-bottom: 20px;
+  }
+
+  .flash-sale {
+    padding-top: 20px; /* Reduce padding for small screens */
+  }
+}

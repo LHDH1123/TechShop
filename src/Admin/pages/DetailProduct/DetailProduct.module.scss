@@ -1,0 +1,146 @@
+.productDetailContainer {
+  display: flex;
+  gap: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cột bên trái: Mã vạch + Bảng thông tin */
+.leftSection {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Mã vạch */
+.barcodeSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 15px;
+  background: #fdfdfd;
+  border-radius: 8px;
+}
+
+.barcodeImage {
+  width: 150px;
+  height: auto;
+}
+
+.barcodeText {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* Bảng thông tin sản phẩm */
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+.productTable td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.productTable .label {
+  font-weight: bold;
+  background: #f1f1f1;
+  width: 150px;
+}
+
+/* Cột bên phải: Hình ảnh sản phẩm */
+.rightSection {
+  flex: 1 1;
+  align-items: center;
+}
+
+.productImageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #fdfdfd;
+  border-radius: 8px;
+}
+
+.productImage {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.imageInfo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 300px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+@media screen and (max-width: 768px) {
+  .productDetailContainer {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .leftSection {
+    width: 100%;
+    gap: 10px;
+  }
+
+  .productTable td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .productTable .label {
+    width: 100px;
+    font-size: 13px;
+  }
+
+  .rightSection {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .productImageSection {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .productImage {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .imageInfo {
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .productTable td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .productTable .label {
+    font-size: 12px;
+    width: 90px;
+  }
+
+  .imageInfo {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,194 @@
+.header {
+  display: flex;
+  align-items: center;
+  // background: #fafafa;
+  // padding-bottom: 20px;
+}
+
+.btn-add {
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.title-page {
+  font-weight: 700;
+  color: #092c4c;
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.title-desc {
+  font-size: 14px;
+  color: #495057;
+  font-weight: 400;
+}
+
+.btn-add {
+  display: flex;
+  align-items: center;
+  -ms-flex-align: center;
+  background: #ff9f43;
+  padding: 8px 11px;
+  color: #ffffff;
+  border-radius: 8px;
+  height: 21px;
+}
+
+.btn-add button {
+  border: none;
+  background: #ff9f43;
+  padding: 8px 5px;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn_exit {
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  position: absolute;
+  top: 14px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.btn_exit button {
+  border: none;
+  background-color: #fff;
+  font-weight: 600;
+  color: #959595;
+  cursor: pointer;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5b6670;
+  margin-bottom: 10px;
+}
+
+.input {
+  width: 100%; /* Make the input field take full width of its parent */
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: solid 1px #cfcfcf;
+  outline: none;
+  color: #585757;
+  margin-bottom: 16px;
+}
+
+.status {
+  display: flex;
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.switch {
+  margin-left: auto;
+  margin-right: 18px;
+}
+
+.modalContent {
+  padding: 24px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: end;
+}
+
+.btn-cancel {
+  background: #67748e;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.btn-submit {
+  background: #ff9f43;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.btn-change {
+  background: #ff9f43;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 15px;
+  cursor: pointer;
+  height: 36px;
+}
+
+.input-blocks {
+  margin-bottom: 16px;
+  width: 117px;
+  height: 103px;
+  border: 1px dashed #5b6670;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input-blocks:hover {
+  cursor: pointer;
+}
+
+.title-img {
+  font-size: 14px;
+}
+
+.preview-img {
+  width: 117px;
+  height: 78px;
+}
+
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.select-role {
+  width: 128%; /* Make the input field take full width of its parent */
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 8px 16px;
+  border: solid 1px #cfcfcf;
+  outline: none;
+  color: #585757;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-left: 50px;
+  }
+}

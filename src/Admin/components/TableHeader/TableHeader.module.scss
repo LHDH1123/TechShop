@@ -1,0 +1,121 @@
+.table-top {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--Stroke, rgba(145, 158, 171, 0.3));
+  background-color: var(--White, #fff);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.search-input:hover {
+  border-color: rgba(145, 158, 171, 0.6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.no-sort input {
+  cursor: pointer;
+}
+
+.search-input input {
+  border: none;
+  outline: none;
+  flex: 1;
+  width: 250px;
+  padding: 10px;
+  color: #333;
+  background-color: transparent;
+}
+
+.search-input input:focus {
+  outline: none;
+  color: #000;
+}
+
+.search-input svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(145, 158, 171, 1);
+  padding: 3px;
+}
+
+.search-input svg:hover {
+  fill: rgba(145, 158, 171, 1);
+}
+
+.filter {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.form-sort {
+  display: flex;
+  align-items: center;
+}
+
+.search-path {
+  display: flex;
+  align-items: center;
+  background: #ff9f43;
+  color: #fff;
+  padding: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.form-sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0px 8px;
+  border: 1px solid var(--Stroke, rgba(145, 158, 171, 0.3));
+  background-color: var(--White, #fff);
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  margin-left: 12px;
+}
+
+.form-sort:hover {
+  border-color: rgba(145, 158, 171, 0.6);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.form-sort svg {
+  width: 24px;
+  height: 24px;
+  fill: rgba(78, 83, 88, 0.7);
+  cursor: pointer;
+  transition: fill 0.3s ease-in-out;
+}
+
+.form-sort svg:hover {
+  fill: rgba(145, 158, 171, 1);
+}
+
+.select {
+  flex: 1;
+  padding: 9px 0px;
+  font-size: 14px;
+  color: rgba(78, 83, 88, 0.7);
+  background-color: #fff;
+  border: none;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.select:hover {
+  border-color: rgba(145, 158, 171, 0.6);
+}
+
+.select option {
+  color: #333;
+  background-color: #fff;
+}

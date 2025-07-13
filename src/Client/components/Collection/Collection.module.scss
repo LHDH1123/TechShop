@@ -1,0 +1,79 @@
+.collection {
+  display: flex;
+  //   flex-wrap: wrap; /* Cho phép phần tử con xếp chồng nếu không đủ không gian */
+  padding: 20px 75px; /* Điều chỉnh khoảng cách bên trong */
+  //   gap: 20px; /* Khoảng cách giữa các phần tử */
+  // max-height: 400px; /* Đặt chiều cao tối đa */
+  // overflow-y: scroll; /* Luôn hiển thị thanh cuộn dọc, kể cả khi không cần thiết */
+  // scroll-behavior: smooth; /* Thêm hiệu ứng cuộn mượt mà */
+}
+
+// .collection::-webkit-scrollbar {
+//   width: 0px; /* Ẩn thanh cuộn dọc */
+//   height: 0px; /* Ẩn thanh cuộn ngang nếu có */
+// }
+
+.collection-info {
+  text-align: left;
+}
+
+.title-collection {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #efefef;
+  padding-bottom: 18px;
+  gap: 10px;
+  width: 400px; /* Đảm bảo chiều rộng tự động */
+  max-width: 500px; /* Chiều rộng tối đa của title */
+  cursor: pointer;
+}
+
+.icon {
+  margin-left: auto;
+  cursor: pointer; /* Thêm hiệu ứng con trỏ khi hover */
+}
+
+.title {
+  font-size: 16px; /* Tăng cỡ chữ cho tiêu đề */
+  color: black;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "SVNMont", sans-serif;
+}
+
+.infos {
+  display: inline-block; /* Hiển thị nội tuyến, giữ độ rộng ôm nội dung */
+  width: auto;
+  margin-top: 18px;
+  text-align: left;
+}
+
+.title-info {
+  width: auto;
+  margin: 0 0 18px 0; /* Loại bỏ các khoảng cách bên trên và bên trái, giữ khoảng cách phía dưới */
+  padding: 0; /* Đảm bảo không có khoảng cách bên trong */
+  font-size: 14px;
+  color: black;
+  font-family: "SVNMont", sans-serif;
+  will-change: transform; /* Giúp cải thiện hiệu suất render */
+  font-weight: normal;
+  cursor: pointer;
+  text-align: left; /* Căn chữ sát bên trái */
+}
+
+.img-collection {
+  display: flex;
+}
+
+.img {
+  margin: 0px 15px;
+}
+
+.img img {
+  width: 100%; /* Đặt kích thước ảnh bằng 30% chiều rộng của container */
+  height: auto; /* Giảm chiều cao ảnh */
+  margin: 0px 16px; /* Khoảng cách giữa các ảnh */
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}

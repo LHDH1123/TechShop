@@ -1,0 +1,14 @@
+.main_content {
+  margin-left: 240px; // chiều rộng của sidebar
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+  min-height: 100vh;
+  // background-color: #f9f9f9;
+}
+
+/* Responsive: khi sidebar bị ẩn */
+@media (max-width: 768px) {
+  .main_content {
+    margin-left: 0;
+  }
+}

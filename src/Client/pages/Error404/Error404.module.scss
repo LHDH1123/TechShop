@@ -1,0 +1,36 @@
+.error {
+  padding: 120px 40px;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.state {
+  font-size: 104px;
+  font-family: "SVNMont", sans-serif;
+}
+
+.title {
+  font-size: 24px;
+  font-family: "SVNMont", sans-serif;
+}
+
+.error a {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "SVNMont", sans-serif;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border-radius: 25px;
+  margin-top: 40px;
+  background-color: black;
+}
