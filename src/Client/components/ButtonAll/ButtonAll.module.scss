@@ -1,21 +1,41 @@
 .btn_viewAll {
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw; // chiếm toàn bộ chiều rộng để luôn căn giữa
+  margin: 20px 0; // thêm khoảng cách trên/dưới
+
+  button {
+    background-color: #fff;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px 26px 12px 26px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    font-family: system-ui;
+    transition: all 0.3s ease;
+  }
+
+  button:hover {
+    border-color: #bf585b;
+    color: #bf585b;
+  }
 }
 
-.btn_viewAll button {
-  background-color: #fff;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 10px 26px 12px 26px;
-  font-size: 16px;
-  font-weight: bold;
-  color: black; /* Màu chữ */
-  cursor: pointer;
-  font-family: system-ui;
+// Responsive Tablet
+@media (max-width: 1024px) {
+  .btn_viewAll button {
+    padding: 9px 22px;
+    font-size: 15px;
+  }
 }
 
-.btn_viewAll button:hover {
-  border: 1px solid #bf585b; /* Thay đổi màu nền khi hover */
-  color: #bf585b;
+// Responsive Mobile
+@media (max-width: 768px) {
+  .btn_viewAll button {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
 }

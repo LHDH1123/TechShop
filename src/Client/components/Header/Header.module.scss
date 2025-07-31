@@ -744,6 +744,10 @@
 }
 
 @media (max-width: 1024px) {
+  .search-bar {
+    width: 300px;
+    margin-left: 100px;
+  }
   .header {
     height: auto;
   }
@@ -801,7 +805,7 @@
   }
 
   .search-bar {
-    width: 90%;
+    // width: 200%;
     margin: 10px auto 10px;
   }
 

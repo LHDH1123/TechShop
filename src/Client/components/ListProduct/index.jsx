@@ -35,8 +35,6 @@ function ListProduct({ title }) {
       setIsLoading(true);
       const normalizedTitle = title.trim(); // remove whitespace
       const fetchFunction = titleSlugMap[normalizedTitle];
-      console.log("title:", `"${normalizedTitle}"`);
-      console.log("fetchFunction:", fetchFunction);
 
       if (fetchFunction) {
         const products = await fetchFunction();
